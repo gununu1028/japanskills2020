@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GoodsController;
+use App\Http\Controllers\OrdersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::resource('goods', GoodsController::class);
+Route::resource('orders',OrdersController::class);
