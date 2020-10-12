@@ -20,4 +20,4 @@ Route::get('/', function () {
 });
 
 Route::resource('goods', GoodsController::class);
-Route::resource('orders',OrdersController::class);
+Route::resource('orders', OrdersController::class);
