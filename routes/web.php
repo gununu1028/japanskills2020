@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\GoodsController;
 use App\Http\Controllers\OrdersController;
+use App\Http\Controllers\ShopsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +22,4 @@ Route::get('/', function () {
 
 Route::resource('goods', GoodsController::class);
 Route::resource('orders', OrdersController::class);
+Route::resource('api/shops', ShopsController::class);
