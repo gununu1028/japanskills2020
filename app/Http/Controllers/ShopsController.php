@@ -14,8 +14,7 @@ class ShopsController extends Controller
      */
     public function index()
     {
-        $shops = Shop::all();
-        return $shops->toArray();
+        return Shop::all()->toArray();
     }
 
     /**
@@ -47,7 +46,7 @@ class ShopsController extends Controller
      */
     public function show($id)
     {
-        //
+        return Shop::find($id)->toArray();
     }
 
     /**
