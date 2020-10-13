@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Item;
 use App\Models\Shop;
 use Illuminate\Http\Request;
 
@@ -46,7 +47,12 @@ class ShopsController extends Controller
      */
     public function show($id)
     {
-        return Shop::find($id)->toArray();
+        $shop = Shop::find($id);
+        $items = $shop->items()->get();
+        
+        $json = $shop->toArray();
+        $json['items'] = $items->toArray();
+        return $json;
     }
 
     /**
