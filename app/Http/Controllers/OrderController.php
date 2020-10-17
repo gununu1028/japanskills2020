@@ -37,7 +37,7 @@ class OrderController extends Controller
     {
         $order = new Order();
         $form = $request->all();
-        unset($form['_token']);
+        unset($form['items']);
         $order->fill($form)->save();
         return Order::all()->toArray();
     }
