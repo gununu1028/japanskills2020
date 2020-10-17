@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use App\Models\Item;
 use App\Models\Order;
 use App\Models\OrderItem;
@@ -39,18 +40,20 @@ class OrderController extends Controller
     {
         $form = $request->all();
 
-        foreach ($form['items'] as $item) {
-            $i = new OrderItem();
-            $param = [
-                'item_id' => $item['id'],
-                'quantity' => $item['quantity']
-            ];
-            $i->fill($param)->save();
-        }
+        DB::transaction(function () use ($form) {
+            foreach ($form['items'] as $item) {
+                $i = new OrderItem();
+                $param = [
+                    'item_id' => $item['id'],
+                    'quantity' => $item['quantity']
+                ];
+                $i->fill($param)->save();
+            }
 
-        unset($form['items']);
-        $order = new Order();
-        $order->fill($form)->save();
+            unset($form['items']);
+            $order = new Order();
+            $order->fill($form)->save();
+        });
 
         return Order::all()->toArray();
     }
