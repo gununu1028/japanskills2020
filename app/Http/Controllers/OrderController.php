@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Item;
 use App\Models\Order;
+use App\Models\OrderItem;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -35,10 +37,21 @@ class OrderController extends Controller
      */
     public function store(Request $request, $shop_id)
     {
-        $order = new Order();
         $form = $request->all();
+
+        foreach ($form['items'] as $item) {
+            $i = new OrderItem();
+            $param = [
+                'item_id' => $item['id'],
+                'quantity' => $item['quantity']
+            ];
+            $i->fill($param)->save();
+        }
+
         unset($form['items']);
+        $order = new Order();
         $order->fill($form)->save();
+
         return Order::all()->toArray();
     }
 
