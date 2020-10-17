@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\ShopResource;
 use App\Models\Item;
 use App\Models\Shop;
 use Illuminate\Http\Request;
@@ -15,7 +16,7 @@ class ShopsController extends Controller
      */
     public function index()
     {
-        return Shop::all()->toArray();
+        return ShopResource::collection(Shop::all());
     }
 
     /**
@@ -49,7 +50,7 @@ class ShopsController extends Controller
     {
         $shop = Shop::find($id);
         $items = $shop->items()->get();
-        
+
         $json = $shop->toArray();
         $json['items'] = $items->toArray();
         return $json;

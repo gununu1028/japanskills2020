@@ -9,6 +9,8 @@ class Shop extends Model
 {
     use HasFactory;
 
+    protected $dates = ['opening_time', 'closing_time'];
+
     public function items()
     {
         return $this->hasMany(Item::class);
