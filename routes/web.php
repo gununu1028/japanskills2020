@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\GoodsController;
 use App\Http\Controllers\ItemsController;
-use App\Http\Controllers\OrdersController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ShopsController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +21,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('orders', OrdersController::class);
 Route::resource('api/shops', ShopsController::class);
 Route::resource('api/items', ItemsController::class);
+Route::post('api/order/{shop_id}', [OrderController::class, 'store']);
