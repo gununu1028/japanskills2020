@@ -38,24 +38,26 @@ class OrderController extends Controller
      */
     public function store(Request $request, $shop_id)
     {
-        $form = $request->all();
-
-        DB::transaction(function () use ($form) {
-            foreach ($form['items'] as $item) {
-                $i = new OrderItem();
-                $param = [
-                    'item_id' => $item['id'],
-                    'quantity' => $item['quantity']
-                ];
-                $i->fill($param)->save();
-            }
-
-            unset($form['items']);
-            $order = new Order();
-            $order->fill($form)->save();
-        });
-
-        return Order::all()->toArray();
+        try {
+            $form = $request->all();
+            $order = DB::transaction(function () use ($form) {
+                foreach ($form['items'] as $item) {
+                    $i = new OrderItem();
+                    $param = [
+                        'item_id' => $item['id'],
+                        'quantity' => $item['quantity']
+                    ];
+                    $i->fill($param)->save();
+                }
+                unset($form['items']);
+                $o = new Order();
+                $o->fill($form)->save();
+                return $o;
+            });
+            return response(['id' => $order->id], 201);
+        } catch (\Throwable $th) {
+            return response(['message' => 'Bad Request'], 400);
+        }
     }
 
     /**
