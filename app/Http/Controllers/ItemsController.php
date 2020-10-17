@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\ItemResource;
 use App\Models\Item;
 use Illuminate\Http\Request;
 
@@ -46,7 +47,12 @@ class ItemsController extends Controller
      */
     public function show($id)
     {
-        return Item::find($id)->toArray();
+        $item = Item::find($id);
+        if ($item == null) {
+            return response(['message' => 'Not Found'], 404);
+        } else {
+            return new ItemResource($item);
+        }
     }
 
     /**
