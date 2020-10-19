@@ -28,6 +28,7 @@
                     </li>
                     <li>
                     <a href="https://www.notion.so/Windows-1101162a28b64d1a808a77550bcf769a">Windowsで環境構築する方法</a>
+                    <span class="has-text-danger is-size-7">New!</span>
                     </li>
                 </ul>
             </div>
