@@ -17,6 +17,8 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('number');
+            $table->string('zip_code');
+            $table->string('address');
             $table->timestamps();
         });
     }
