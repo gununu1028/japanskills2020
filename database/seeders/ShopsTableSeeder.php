@@ -16,7 +16,7 @@ class ShopsTableSeeder extends Seeder
     {
         // 1つ目
         $params = [
-            'photo' => 'http://skilljapan.info/images/shop.png',
+            'photo' => 'https://www.fashion-press.net/img/news/25978/daikanyama_07.jpg',
             'name' => '店舗名',
             'opening_time' => '09:00',
             'closing_time' => '21:00',
