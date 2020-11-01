@@ -38,7 +38,13 @@
             <h2 class="title has-text-black">11/1</h2>
             <div class="content has-text-black">
                 <ul>
-                    <li>JavaScriptを使ったAPIの操作（モジュール3、POST部分）</li>
+                    <li>JavaScriptを使ったAPIの操作（モジュール3、POST部分）
+                    <ul>
+                    <li>
+                    <a href="https://www.notion.so/Order-vue-ad9e0b633fdf4ac29540492c7db02f55">Order.vue</a>
+                    </li>
+                    </ul>
+                    </li>
                     <li>PHPとLaravelを使ったAPIの作成（モジュール2）</li>
                     <li>各種準備
                         <ul>
