@@ -39,17 +39,23 @@
             <div class="content has-text-black">
                 <ul>
                     <li>JavaScriptを使ったAPIの操作（モジュール3、POST部分）
-                    <ul>
-                    <li>
-                    <a href="https://www.notion.so/Order-vue-ad9e0b633fdf4ac29540492c7db02f55">Order.vue</a>
-                    </li>
-                    </ul>
+                        <ul>
+                            <li>
+                                <a href="https://www.notion.so/Order-vue-ad9e0b633fdf4ac29540492c7db02f55">Order.vue</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>PHPとLaravelを使ったAPIの作成（モジュール2）</li>
                     <li>各種準備
                         <ul>
                             <li>Heroku</li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.notion.so/Heroku-CLI-fe81649ce4cd471a840772d675b52a91">
+                            Heroku CLIのインストール
+                            <span class="has-text-danger is-size-7">New!</span>
+                        </a>
                     </li>
                 </ul>
             </div>
