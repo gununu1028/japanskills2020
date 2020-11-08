@@ -70,6 +70,11 @@
                     <li>
                     <a href="https://note.com/koushikagawa/n/n203ed82e95ff">Laravel を Heroku にデプロイする方法</a>
                     </li>
+                    <li>
+                        <a href="https://github.com/gununu1028/japanskills2020_php">
+                        モジュール2 ソースコード例
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
