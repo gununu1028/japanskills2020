@@ -22,3 +22,5 @@ Route::get('/', function () {
 });
 
 Route::resource('api/shops', ShopsController::class);
+Route::resource('api/items', ItemsController::class);
+Route::post('api/order/{shop_id}', [OrderController::class, 'store']);
