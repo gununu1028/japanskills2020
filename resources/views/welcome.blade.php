@@ -61,6 +61,9 @@
             <div class="content has-text-black">
                 <ul>
                     <li>まとめ、その他</li>
+                    <li>
+                    <a href="https://note.com/koushikagawa/n/n203ed82e95ff">Laravel を Heroku にデプロイする方法</a>
+                    </li>
                 </ul>
             </div>
         </div>
