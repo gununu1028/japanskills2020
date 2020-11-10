@@ -54,7 +54,6 @@
                     <li>
                         <a href="https://www.notion.so/Heroku-CLI-fe81649ce4cd471a840772d675b52a91">
                             Heroku CLIのインストール
-                            <span class="has-text-danger is-size-7">New!</span>
                         </a>
                     </li>
                 </ul>
