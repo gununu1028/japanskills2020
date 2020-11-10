@@ -75,6 +75,12 @@
                         モジュール2 ソースコード例
                         </a>
                     </li>
+                    <li>
+                        <a href="https://www.notion.so/80ba433673f04e3fa319741a2017e63e">
+                            課題提出方法
+                            <span class="has-text-danger is-size-7">New!</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
