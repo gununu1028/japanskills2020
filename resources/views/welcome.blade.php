@@ -78,7 +78,7 @@
             </div>
         </div>
     </section>
-    <section class="section">
+    <section class="section pb-0">
         <div class="container">
             <h2 class="title has-text-black">11/11</h2>
             <div class="content has-text-black">
@@ -98,7 +98,7 @@
         </div>
     </section>
     <div class="container">
-        <div class="notification is-warning is-light">
+        <div class="notification is-warning is-light mb-4">
             このページは、技能五輪全国大会終了後に非公開になりますのでご注意ください。
         </div>
     </div>
