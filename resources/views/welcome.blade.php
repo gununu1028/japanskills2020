@@ -60,7 +60,7 @@
             </div>
         </div>
     </section>
-    <section class="section">
+    <section class="section pb-0">
         <div class="container">
             <h2 class="title has-text-black">11/7</h2>
             <div class="content has-text-black">
@@ -78,7 +78,7 @@
             </div>
         </div>
     </section>
-    <section class="section pb-0">
+    <section class="section">
         <div class="container">
             <h2 class="title has-text-black">11/11</h2>
             <div class="content has-text-black">
@@ -92,6 +92,9 @@
                         <a href="https://gitlab.com/atsushi_matsuda/gorin2020_module3_vue">
                             モジュール3 ソースコード例
                         </a>
+                    </li>
+                    <li>
+                    <a href="https://www.notion.so/083fcaebf5f0461890f2b531f7b3722d">質問事項</a>
                     </li>
                 </ul>
             </div>
