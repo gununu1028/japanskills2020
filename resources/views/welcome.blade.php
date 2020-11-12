@@ -67,17 +67,30 @@
                 <ul>
                     <li>まとめ、その他</li>
                     <li>
-                    <a href="https://note.com/koushikagawa/n/n203ed82e95ff">Laravel を Heroku にデプロイする方法</a>
+                        <a href="https://note.com/koushikagawa/n/n203ed82e95ff">Laravel を Heroku にデプロイする方法</a>
                     </li>
                     <li>
                         <a href="https://github.com/gununu1028/japanskills2020_php">
-                        モジュール2 ソースコード例
+                            モジュール2 ソースコード例
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title has-text-black">11/11</h2>
+            <div class="content has-text-black">
+                <ul>
+                    <li>
+                        <a href="https://www.notion.so/80ba433673f04e3fa319741a2017e63e">
+                            課題提出方法（gitコマンドなどを追記）
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.notion.so/80ba433673f04e3fa319741a2017e63e">
-                            課題提出方法
-                            <span class="has-text-danger is-size-7">New!</span>
+                        <a href="https://gitlab.com/atsushi_matsuda/gorin2020_module3_vue">
+                            モジュール3 ソースコード例
                         </a>
                     </li>
                 </ul>
